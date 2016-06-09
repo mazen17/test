@@ -1,0 +1,11 @@
+git branch branch_name - create new branch
+gir branch - show all branches
+git checkout branch_name - switch to branch
+git checkout -b branch_name -switched to a new branch 
+git branch -v - show last commits for each branch
+git ls-remote - show the branches on the server
+git push origin branch_name - create new branch on the server
+git stash
+git stash pop
+git diff --name-status master tomcat7 - shows the different files in branches
+git checkout FROM_BRANCH_NAME filename

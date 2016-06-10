@@ -9,3 +9,4 @@ git stash
 git stash pop
 git diff --name-status master tomcat7 - shows the different files in branches
 git checkout FROM_BRANCH_NAME filename
+1

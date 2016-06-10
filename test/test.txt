@@ -1,3 +1,7 @@
 test
 test2
 stash
+smash
+smash2
+
+stage

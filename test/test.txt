@@ -5,3 +5,4 @@ smash
 smash2
 
 stage
+stubs

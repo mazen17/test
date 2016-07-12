@@ -6,7 +6,7 @@ git config user.name - shows my username
 git clone git://git.kernel.org/pub/scm/git/git.git
 git status
 git status -s -show short status
-$ git add *.java - adds all java files
+$git add *.java - adds all java files
 git diff --staged - diff to staged files
 git diff --staged file name - git diff to staged file
 git diff  --name-status master..branch
@@ -61,6 +61,8 @@ git log --pretty="format:%h %G? %aN %s"
 git log --graph
 got log -p -1 filename  - show changes in the previous commit for filename
 git log --since=2.weeks
+git log --author='authors.name'
+
 git show SHA1 key
 git show branch_name
 git show master@{yesterday}
@@ -68,13 +70,20 @@ git show HEAD
 git show HEAD^
 
 
-git remote show origin
+git remote show origin -Inspecting a Remote
+git remote -v
+git remote add pb https://github.com/paulboone/ticgit
+git remote rename name1 name2  -renaming remote
+
+git fetch
 
 
-$ git config --global alias.co checkout
-$ git config --global alias.br branch
-$ git config --global alias.ci commit
-$ git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD --'
+
 
 gpg --gen-key
 set CATALINA_OPTS=-DDWEB_SITE_ID=dw08381 -DDWEB_CLASS=integration -Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true XX:MaxPermSize=512m

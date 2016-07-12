@@ -1,0 +1,86 @@
+git config --global user.name "mazen17"
+git config --global user.email johndoe@example.com
+git config --global core.editor notepad.txt
+git config --list
+git config user.name - shows my username
+git clone git://git.kernel.org/pub/scm/git/git.git
+git status
+git status -s -show short status
+$git add *.java - adds all java files
+git diff --staged - diff to staged files
+git diff --staged file name - git diff to staged file
+git diff  --name-status master..branch
+git commit -m 'initial project version'
+git commit -a -S -m 'signed commit'
+git commit --amend - modify last commit message
+git commit  -am 'added new benchmarks'  - skip staging
+git branch branch_name - create new branch
+gir branch - show all branches
+git checkout branch_name - switch to branch
+git checkout -b branch_name -switched to a new branch 
+git branch -v - show last commits for each branch
+git checkout tags/<tag_name> -b <branch_name>
+
+git ls-remote - show the branches on the server
+git push origin branch_name - create new branch on the server
+git clean -f -d - removes any files and any subdirectories that become empty as a result
+git stash
+git stash list - show stashes
+git stash pop - applies and delets the last stash
+git stash apply stash@{2} - applies selected stash
+git stash drop stash@{2} - deletes selected stash
+git stash pop
+git diff --name-status master tomcat7 - shows the different files in branches
+git diff --name-status master..branchName
+
+git checkout FROM_BRANCH_NAME filename
+git push --set-upstream origin branch_name - push a new local branch to the server
+git push origin --delete <branchName> //delete branch on server
+git branch -d branchname //delete branch localy
+git tag
+git tag -a v1.4 -m 'my version 1.4'
+git tag v1.0-lw /lightweight tag
+git tag -a 1.0 4a54c3a7bac7b96f96defed03bdec894520faadd -m "End of migration"
+git push origin v1.0 //push tag to remote
+git push origin --tags //push all tags to remote
+
+history commands
+git log
+git log -p - show changes in the previous commits
+git log -2 - show last 2 commits
+git log -p -2 
+git log --stat
+git log --abbrev-commit --pretty=oneline
+git log --pretty=oneline
+git log --pretty=format:'%h %s' --graph
+git log -g master
+git log --show-signature -1
+git log --pretty="format:%h %G? %aN %s"
+git log --graph
+got log -p -1 filename  - show changes in the previous commit for filename
+git log --since=2.weeks
+git log --author='authors.name'
+
+git show SHA1 key
+git show branch_name
+git show master@{yesterday}
+git show HEAD
+git show HEAD^
+
+git remote show origin -Inspecting a Remote
+git remote -v
+git remote add pb https://github.com/paulboone/ticgit
+git remote rename name1 name2  -renaming remote
+
+git fetch
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD --'
+
+branch1
+
+gpg --gen-key
+set CATALINA_OPTS=-DDWEB_SITE_ID=dw08381 -DDWEB_CLASS=integration -Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true XX:MaxPermSize=512m

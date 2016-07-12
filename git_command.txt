@@ -44,8 +44,6 @@ git tag -a 1.0 4a54c3a7bac7b96f96defed03bdec894520faadd -m "End of migration"
 git push origin v1.0 //push tag to remote
 git push origin --tags //push all tags to remote
 
-
-
 history commands
 git log
 git log -p - show changes in the previous commits
@@ -69,14 +67,12 @@ git show master@{yesterday}
 git show HEAD
 git show HEAD^
 
-
 git remote show origin -Inspecting a Remote
 git remote -v
 git remote add pb https://github.com/paulboone/ticgit
 git remote rename name1 name2  -renaming remote
 
 git fetch
-
 
 git config --global alias.co checkout
 git config --global alias.br branch

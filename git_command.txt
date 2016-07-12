@@ -80,6 +80,7 @@ git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
 
+branch1
 
 gpg --gen-key
 set CATALINA_OPTS=-DDWEB_SITE_ID=dw08381 -DDWEB_CLASS=integration -Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true XX:MaxPermSize=512m

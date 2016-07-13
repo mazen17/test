@@ -10,16 +10,24 @@ $git add *.java - adds all java files
 git diff --staged - diff to staged files
 git diff --staged file name - git diff to staged file
 git diff  --name-status master..branch
+git diff --name-status master tomcat7 - shows the different files in branches
+git diff --name-status master..branchName
+
+
 git commit -m 'initial project version'
 git commit -a -S -m 'signed commit'
 git commit --amend - modify last commit message
 git commit  -am 'added new benchmarks'  - skip staging
+
 git branch branch_name - create new branch
 gir branch - show all branches
+git branch -v - show last commits for each branch
+git branch -vv
+
 git checkout branch_name - switch to branch
 git checkout -b branch_name -switched to a new branch 
-git branch -v - show last commits for each branch
 git checkout tags/<tag_name> -b <branch_name>
+git checkout -b localbranch origin/remotebranch //checkout remote branc into a local branch 
 
 git ls-remote - show the branches on the server
 git push origin branch_name - create new branch on the server
@@ -30,19 +38,19 @@ git stash pop - applies and delets the last stash
 git stash apply stash@{2} - applies selected stash
 git stash drop stash@{2} - deletes selected stash
 git stash pop
-git diff --name-status master tomcat7 - shows the different files in branches
-git diff --name-status master..branchName
-
 git checkout FROM_BRANCH_NAME filename
 git push --set-upstream origin branch_name - push a new local branch to the server
 git push origin --delete <branchName> //delete branch on server
+git push origin --tags //push all tags to remote
+git push origin branchname //push branch to remote
+
+
 git branch -d branchname //delete branch localy
 git tag
 git tag -a v1.4 -m 'my version 1.4'
 git tag v1.0-lw /lightweight tag
 git tag -a 1.0 4a54c3a7bac7b96f96defed03bdec894520faadd -m "End of migration"
 git push origin v1.0 //push tag to remote
-git push origin --tags //push all tags to remote
 
 git merge --abort
 
@@ -76,6 +84,7 @@ git remote rename name1 name2  -renaming remote
 
 git fetch
 git fetch --tags
+git fetch origin
 git fetch --all
 git pull
 git pull --all

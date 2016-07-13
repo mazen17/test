@@ -82,7 +82,8 @@ git remote -v
 git remote add pb https://github.com/paulboone/ticgit
 git remote rename name1 name2  -renaming remote
 
-git fetch
+git fetch (git merge) //fetch down all the changes on the server that you don’t have yet, it will not modify your working directory at all
+			//use git merge to apply the changes from the server
 git fetch --tags
 git fetch origin
 git fetch --all

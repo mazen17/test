@@ -75,6 +75,10 @@ git remote add pb https://github.com/paulboone/ticgit
 git remote rename name1 name2  -renaming remote
 
 git fetch
+git fetch --tags
+git fetch --all
+git pull
+git pull --all
 
 git config --global alias.co checkout
 git config --global alias.br branch
